@@ -3,7 +3,7 @@ import jax
 import jax.numpy as jnp
 
 from .torch_head import get_aesthetic_head as get_head_torch
-from clip.clip import create_clip_encode_fn
+from jclip.clip import create_clip_encode_fn
 
 class AestheticHead(nn.Module):
     input_dim: int
